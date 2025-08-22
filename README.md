@@ -1,13 +1,13 @@
-SkyCast: Project Plan
+SKY-CAST
 
-1. Project Description
+#Project Descriptio
 SkyCast is a clean, responsive weather dashboard that helps users explore real-time
 weather data across the globe. Designed for everyday convenience and clarity, it allows
 users to search any city, view current conditions, and get a 5-day forecast. The interface will
 emphasize usability, personalization, and minimalism while integrating a reliable external API
 for accurate weather data.
 
-2. Features
+# Features
 2.1. Core Features
 ● City Search: Search for current weather by entering a city name.
 ● Current Weather View: Displays temperature, humidity, wind speed, and general
@@ -16,7 +16,7 @@ conditions.
 ● Weather Icons: Dynamically shows weather-specific icons (e.g., sun, cloud, rain).
 ● Responsive Design: Optimized for mobile, tablet, and desktop views.
 
-2.2. Additional Features
+# Additional Features
 ● Dark Mode Toggle: Offers a comfortable dark/light viewing experience.
 ● Location-Based Weather: Optionally uses browser geolocation to fetch local
 weather.
@@ -24,7 +24,7 @@ weather.
 ● Unit Switcher: Toggle between Celsius and Fahrenheit.
 ● Error Handling: User-friendly error messages for invalid cities or API issues.
 
-3. Technical Specifications
+# Technical Specifications
 3.1. API Strategy
 ● Primary API: OpenWeatherMap API
 ○ Data Source: Real-time weather and 5-day forecast
@@ -35,7 +35,7 @@ weather.
 ■ api.openweathermap.org/data/2.5/weather?q={city}
 ■ api.openweathermap.org/data/2.5/forecast?q={city}
 
-3.2. Frontend Architecture
+# Frontend Architecture
 The app will be built using React with Zustand for lightweight global state management.
 Component Purpose
 App.jsx Root component with app routing and layout
@@ -99,42 +99,9 @@ CopyEdit
 │ ├── index.jsx
 │ └── styles.css
 ├── .env
-├── tailwind.config.js
-├── vite.config.js
 ├── package.json
 └── README.md
 
-6. Development Timeline
-Week Phase Key Tasks
-Week
-1
-Ideation &
-Setup
 
-Finalize project plan, design wireframes, set up Vite + Tailwind
-+ Zustand
 
-Week
-2
-Core Build Build SearchBar, WeatherCard, and connect OpenWeather
 
-API
-
-Week
-3
-Forecast & UI Add Forecast, UnitToggle, dark mode, and dynamic icons
-
-Week
-4
-State &
-Favorites
-
-Add Zustand store, FavoriteList, error states, and
-responsive layout
-
-Week
-5
-Polish &
-Launch
-
-Final QA, optimize performance, deploy via Vercel,
