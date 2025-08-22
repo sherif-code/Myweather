@@ -1,14 +1,9 @@
-import WeatherCard from "./components/WeatherCard.jsx"
+import DashBoard from "./pages/DashBoard";
 
-
-function App() {
-
-
+export default function App() {
   return (
-    <>
-    <WeatherCard city="Accra" country="Ghana"/>
-    </>
-  )
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+      <DashBoard />
+    </div>
+  );
 }
-
-export default App
