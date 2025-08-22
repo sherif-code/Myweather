@@ -1,4 +1,4 @@
-SKY-CAST
+## SKY CAST
 
 #Project Descriptio
 SkyCast is a clean, responsive weather dashboard that helps users explore real-time
