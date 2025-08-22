@@ -35,45 +35,8 @@ weather.
 ■ api.openweathermap.org/data/2.5/weather?q={city}
 ■ api.openweathermap.org/data/2.5/forecast?q={city}
 
-# Frontend Architecture
-The app will be built using React with Zustand for lightweight global state management.
-Component Purpose
-App.jsx Root component with app routing and layout
-SearchBar.jsx Allows users to search for a city
-WeatherCard.js
-x
 
-Displays current weather conditions
-
-Forecast.jsx Shows 5-day forecast in cards
-FavoriteList.j
-sx
-
-Displays a list of saved cities
-
-UnitToggle.jsx Toggle between Celsius/Fahrenheit
-ErrorMessage.j
-sx
-
-Displays error messages
-
-WeatherStore.j
-s
-
-Zustand store for managing weather state
-
-4. Design & Styling
-● Framework: Tailwind CSS for utility-first styling and responsiveness
-● Approach: Mobile-first design
-● Wireframes: Will be hand-drawn or mocked in Figma for key views:
-○ Search interface
-○ Weather overview screen
-○ Forecast layout
-○ Favorites dashboard
-● Visual Style: Minimalist with soft transitions and contextual icons based on weather
-type
-
-5. Project Structure
+# Project Structure
 bash
 CopyEdit
 /skycast/
