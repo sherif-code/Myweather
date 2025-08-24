@@ -1,9 +1,8 @@
 //imports stae from the (weather data ) from the store
 import useWeatherStore from "../store/WeatherStore";
 //import images from the images to be useed in my card
-import picture from "../images/weather.png"; 
+import picture from "../images/weather.png";
 import CloudPicture from "../images/clound.jpg";
-
 
 function WeatherCard() {
   //// Destructure weather data and status values from the store
@@ -12,14 +11,16 @@ function WeatherCard() {
   // If still fetching weather, show loading message
   if (loading) return <p> Loading weather...</p>;
 
-
   // If there's an error (like invalid city), show error message in red
   if (error) return <p className="text-red-500"> {error}</p>;
 
-	//if no weather data available yet show nothing !
+  //if no weather data available yet show nothing !
   if (!weather) return null;
 
   return (
+    /*
+		Note: weather card needds to be reseted back to it snormal formart before i added the black background colrs and borders
+		*/
     <div
       className="p-4 rounded-2xl mb-4 bg-cover bg-center h-100 shadow-xl"
       style={{ backgroundImage: `url(${picture})` }}

@@ -12,8 +12,8 @@ function ForeCast() {
   );
 
   return (
-    <div className="bg-cover bg-center h-100 p-5" style={{background: `url(${group})`}
-		}>
+    
+		
       <div className="grid grid-cols-5 gap-2 mt-4 ">
         {daily.map((day) => (
           <div
@@ -28,9 +28,14 @@ function ForeCast() {
             <p>{Math.round(day.main.temp)}°</p>
             <p>{day.weather[0].main}</p>
           </div>
+					
         ))}
+				
+
+				
       </div>
-    </div>
+			
+    
   );
 }
 
