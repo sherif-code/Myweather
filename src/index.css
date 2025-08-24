@@ -1,2 +1,7 @@
 @import "tailwindcss";
 
+@layer base{
+	a{
+		@apply text-teal-200
+	}
+}

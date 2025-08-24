@@ -1,6 +1,7 @@
 import useWeatherStore from "../store/WeatherStore";
+import group from "../images/group.png";
 
-export default function ForeCast() {
+function ForeCast() {
   const { forecast } = useWeatherStore();
 
   if (!forecast) return null;
@@ -11,21 +12,26 @@ export default function ForeCast() {
   );
 
   return (
-    <div className="grid grid-cols-5 gap-2 mt-4">
-      {daily.map((day) => (
-        <div
-          key={day.dt}
-          className="p-3 rounded-xl bg-blue-100 dark:bg-blue-900 text-center"
-        >
-          <p>
-            {new Date(day.dt_txt).toLocaleDateString("en-US", {
-              weekday: "short",
-            })}
-          </p>
-          <p>{Math.round(day.main.temp)}°</p>
-          <p>{day.weather[0].main}</p>
-        </div>
-      ))}
+    <div className="bg-cover bg-center h-100 p-5" style={{background: `url(${group})`}
+		}>
+      <div className="grid grid-cols-5 gap-2 mt-4 ">
+        {daily.map((day) => (
+          <div
+            key={day.dt}
+            className="p-3 rounded-xl bg-blue-100 dark:bg-blue-900 text-center. mt-10  "
+          >
+            <p>
+              {new Date(day.dt_txt).toLocaleDateString("en-US", {
+                weekday: "short",
+              })}
+            </p>
+            <p>{Math.round(day.main.temp)}°</p>
+            <p>{day.weather[0].main}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
+
+export default ForeCast;

@@ -6,7 +6,7 @@ export default function FavoriteList() {
   return (
     <div className="mt-6">
       <div className="flex justify-between items-center mb-2">
-        <h3 className="text-lg font-semibold">⭐ Favorite Cities</h3>
+        <h3 className="text-lg font-semibold">Favorite Cities</h3>
         {city && (
           <button
             onClick={() => addFavorite(city)}
