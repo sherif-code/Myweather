@@ -29,6 +29,11 @@ function SearchBar() {
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            handleSearch();
+          }
+        }}
         placeholder="Enter city..."
         className="flex-1 p-2 bg-[#232325] rounded-lg text-white px-4 w-full sm:w-auto"
       />
