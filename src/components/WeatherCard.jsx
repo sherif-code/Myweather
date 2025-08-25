@@ -29,7 +29,7 @@ function WeatherCard() {
         Current Weather
       </h2>
 
-      <p className="text-lg tetx mb-10">{city}</p>
+      <p className="text-lg text-center mb-10">{city}</p>
 
       <div className="flex grid-cols-4 gap-5 justify-center">
         <div
