@@ -1,5 +1,5 @@
 import useWeatherStore from "../store/WeatherStore";
-import group from "../images/group.png";
+//import group from "../images/group.png";
 
 function ForeCast() {
   const { forecast } = useWeatherStore();
