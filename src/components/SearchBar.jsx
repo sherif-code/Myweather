@@ -12,6 +12,8 @@ function SearchBar() {
     }
   };
 
+
+
   return (
     <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 mb-4 w-full">
       {/* Left buttons group */}
