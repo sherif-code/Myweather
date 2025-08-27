@@ -29,13 +29,13 @@ function WeatherCard() {
       style={{ backgroundImage: `url(${picture})` }}
     >
       {/* Card title */}
-      <h2 className="text-xl font-semibold mb-2 text-center bg-[#2a5ed946] ml-100 mr-100 rounded-2xl p-2 text-shadow-white">
+      <h2 className="text-xl font-semibold mb-2 text-center bg-[#2b5ed6b3] ml-100 mr-100 rounded-2xl p-2 text-shadow-white">
         Current Weather
       </h2>
 
       {/* City name */}
       <p
-        className="font-bold px-18 mb-10 text-2xl text-black"
+        className="font-bold px-18 mb-10 text-center text-2xl bg-[#373b44] ml-100 mr-100 p-5 text-white"
         aria-label="City"
       >
         {city}
@@ -44,20 +44,24 @@ function WeatherCard() {
       {/* Weather details grid */}
       <div className="flex grid-cols-4 gap-5 justify-center">
         {/* Temperature card with cloud background */}
-        <div
-          className="bg-blue-500 h-30 p-2 w-[20%] rounded-2xl text-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${CloudPicture})` }}
-        >
-          <p aria-label="Temperature">Temp: {Math.round(weather.main.temp)}°</p>
+        <div className="bg-[#2a5fd990] h-30 p-2 w-[20%] pt-8 rounded-2xl text-center bg-cover bg-center">
+          <p aria-label="Temperature">
+            {" "}
+            Temp:
+            <br></br> {Math.round(weather.main.temp)}°
+          </p>
         </div>
 
         {/* Humidity card */}
-        <div className="bg-blue-500 h-30 p-2 w-[20%] rounded-2xl text-center">
-          <p aria-label="Humidity">Humidity: {weather.main.humidity}%</p>
+        <div className="bg-[#2a5fd990] h-30 p-2 w-[20%] pt-8 rounded-2xl text-center">
+          <p aria-label="Humidity">
+            Humidity:<br></br>
+            {weather.main.humidity}%
+          </p>
         </div>
 
         {/* Wind speed card */}
-        <div className="bg-blue-500 h-30 p-2 w-[20%] rounded-2xl text-center">
+        <div className="bg-[#2a5fd990] h-30 p-2 w-[20%]  pt-8 rounded-2xl text-center">
           <p aria-label="Wind">
             Wind:
             <br />
@@ -66,7 +70,7 @@ function WeatherCard() {
         </div>
 
         {/* Weather condition card */}
-        <div className="bg-[#2a5fd990] h-30 p-2 rounded-2xl w-[20%] text-center">
+        <div className="bg-[#2a5fd990] h-30 p-2  pt-8 rounded-2xl w-[20%] text-center">
           <p aria-label="Condition">
             Condition:
             <br />
