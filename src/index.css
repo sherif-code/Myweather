@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Poppins:wght@100..900&family=Roboto:wght@100..900&display=swap');
 @import "tailwindcss";
 
-@layer base{
-	a{
-		@apply text-teal-200
-	}
+@theme {
+	--font-nunito: "Nunito", sans-serif;
+	--font-poppins: "Poppins", sans-serif;
+	--font-roboto: "Roboto", sans-serif;
 }

@@ -7,7 +7,7 @@ import FavoriteList from "../components/FavoriteList";
  function Dashboard() {
   return (
     <div className="max-w-6xl mx-auto p-4 bg-black">
-      <h1 className="text-3xl font-bold mb-6 text-center" >SkyCast</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center font-nunito" >SkyCast</h1>
       <SearchBar />
       <UnitToggle />
       <WeatherCard />

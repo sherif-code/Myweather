@@ -21,9 +21,7 @@ function SearchBar() {
         <button className="bg-[#232325] rounded-2xl border text-white px-4 py-2 hover:bg-[#444445] hover:text-white hover:shadow-lg">
           Toggle
         </button>
-        <button className="bg-[#232325] rounded-2xl border text-white px-4 py-2 hover:bg-[#444445] hover:text-white hover:shadow-lg">
-          Button
-        </button>
+       
       </div>
 
       {/* Search input */}

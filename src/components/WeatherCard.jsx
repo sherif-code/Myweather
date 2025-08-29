@@ -1,15 +1,15 @@
 // Import weather state from the store
 import useWeatherStore from "../store/WeatherStore";
 // Import images for card backgrounds
-import picture from "../images/weather.png";
-import CloudPicture from "../images/clound.jpg";
+import picture from "../images/new.jpg";
+
 
 function WeatherCard() {
   // Get weather, city, loading, and error state from the store
   const { weather, city, loading, error } = useWeatherStore();
 
   // Show loading message while fetching data
-  if (loading) return <p aria-live="polite">Loading weather...</p>;
+  if (loading) return <p aria-live="polite" className="font-nunito">Loading weather...</p>;
 
   // Show error message if there is an error
   if (error)
@@ -29,22 +29,22 @@ function WeatherCard() {
       style={{ backgroundImage: `url(${picture})` }}
     >
       {/* Card title */}
-      <h2 className="text-xl font-semibold mb-2 text-center bg-[#2b5ed6b3] ml-100 mr-100 rounded-2xl p-2 text-shadow-white">
+      <h2 className="text-xl  mb-2 text-center  rounded-2xl p-2 text-shadow-white font-nunito">
         Current Weather
       </h2>
 
       {/* City name */}
       <p
-        className="font-bold px-18 mb-10 text-center text-2xl bg-[#373b44] ml-100 mr-100 p-5 text-white"
+        className="font-bold px-18 mb-10 font-nunito text-center text-2xl p-5 text-white"
         aria-label="City"
       >
         {city}
       </p>
 
       {/* Weather details grid */}
-      <div className="flex grid-cols-4 gap-5 justify-center">
+      <div className="flex grid-cols-4 gap-5 justify-center font-nunito">
         {/* Temperature card with cloud background */}
-        <div className="bg-[#2a5fd990] h-30 p-2 w-[20%] pt-8 rounded-2xl text-center bg-cover bg-center">
+        <div className="bg-[#13131490] h-30 p-2 w-[20%] pt-8 rounded-2xl text-center bg-cover bg-center">
           <p aria-label="Temperature">
             {" "}
             Temp:
@@ -53,7 +53,7 @@ function WeatherCard() {
         </div>
 
         {/* Humidity card */}
-        <div className="bg-[#2a5fd990] h-30 p-2 w-[20%] pt-8 rounded-2xl text-center">
+        <div className="bg-[#13131490] h-30 p-2 w-[20%] pt-8 rounded-2xl text-center">
           <p aria-label="Humidity">
             Humidity:<br></br>
             {weather.main.humidity}%
@@ -61,7 +61,7 @@ function WeatherCard() {
         </div>
 
         {/* Wind speed card */}
-        <div className="bg-[#2a5fd990] h-30 p-2 w-[20%]  pt-8 rounded-2xl text-center">
+        <div className="bg-[#13131490] h-30 p-2 w-[20%] font-nunito pt-8 rounded-2xl text-center">
           <p aria-label="Wind">
             Wind:
             <br />
@@ -70,7 +70,7 @@ function WeatherCard() {
         </div>
 
         {/* Weather condition card */}
-        <div className="bg-[#2a5fd990] h-30 p-2  pt-8 rounded-2xl w-[20%] text-center">
+        <div className="bg-[#13131490] h-30 p-2  pt-8 rounded-2xl w-[20%] text-center">
           <p aria-label="Condition">
             Condition:
             <br />
