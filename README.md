@@ -1,6 +1,6 @@
 ## SKY CAST
 
-#Project Descriptio
+## Project Descriptio
 SkyCast is a clean, responsive weather dashboard that helps users explore real-time
 weather data across the globe. Designed for everyday convenience and clarity, it allows
 users to search any city, view current conditions, and get a 5-day forecast. The interface will
@@ -8,7 +8,7 @@ emphasize usability, personalization, and minimalism while integrating a reliabl
 for accurate weather data.
 
 # Features
-2.1. Core Features
+** Core Features
 ● City Search: Search for current weather by entering a city name.
 ● Current Weather View: Displays temperature, humidity, wind speed, and general
 conditions.
@@ -17,7 +17,7 @@ conditions.
 ● Responsive Design: Optimized for mobile, tablet, and desktop views.
 
 # Additional Features
-● Dark Mode Toggle: Offers a comfortable dark/light viewing experience.
+
 ● Location-Based Weather: Optionally uses browser geolocation to fetch local
 weather.
 ● Favorites List: Users can save favorite cities for quick access.
