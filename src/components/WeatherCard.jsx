@@ -61,7 +61,7 @@ function WeatherCard() {
         </div>
 
         {/* Wind speed card */}
-        <div className="bg-[#13131490] h-30 p-2 w-[20%] font-nunito pt-8 rounded-2xl text-center">
+        <div className="bg-[#3d9fa65e] h-30 p-2 w-[20%] font-nunito pt-8 rounded-2xl text-center">
           <p aria-label="Wind">
             Wind:
             <br />
@@ -70,7 +70,7 @@ function WeatherCard() {
         </div>
 
         {/* Weather condition card */}
-        <div className="bg-[#13131490] h-30 p-2  pt-8 rounded-2xl w-[20%] text-center">
+        <div className="bg-[#0d0abf3d] h-30 p-2  pt-8 rounded-2xl w-[20%] text-center">
           <p aria-label="Condition">
             Condition:
             <br />
