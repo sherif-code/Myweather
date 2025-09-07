@@ -17,12 +17,8 @@ function SearchBar(props) {
 
   return (
     <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 mb-4 w-full">
-      {/* Left buttons group */}
-      <div className="flex gap-3 mb-2 sm:mb-0">
-        <button className="bg-[#000000] rounded-2xl border text-white px-4 py-2 hover:bg-[#ffffff] hover:text-black hover:shadow-lg">
-          MODE
-        </button>
-      </div>
+      
+     
 
       {/* Search input */}
       <input
